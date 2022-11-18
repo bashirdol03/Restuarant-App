@@ -1,24 +1,213 @@
 body {
-    margin: 0;
+    margin: 0 auto;
+    
     font-family: 'Smythe', sans-serif;
-    background-image: url(`images/diner.jpg`);
+   
 } 
 
+
+
+
 header{
-    background-image: url(`images/diner.jpg`);
-    background: greenyellow;
+    
+    margin: 0 auto;
+    width:400px;
+    background-image: url("images/diner.jpg");
+    background: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
     padding: 20px 40px;
     
 }    
 
 
 .container {
-    
-    border: 2px solid red;
+    width: 400px;
+    margin: 0 auto;
+    border-bottom: 2px solid grey;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 20px 40px;
+    gap: 10px;
     
 
 
+}
+
+h4{
+    font-size: 25px
+}
+
+h4, p {
+    margin: 0;
+    padding:5px;
+}
+
+.grey{
+    color: grey
+}
+
+.food-icon{
+    
+    padding-right: 10px;
+    font-size: 80px;
+}
+
+.item-img{
+    
+    width: 70px;
+    height: 70px;
+    margin-left: 0px ;
+}
+
+.item-details{
+    width: 200px;
+    padding: 0 10px;
+    
+    
+}
+
+.item-btn{
+    margin-left: auto;
+    border: 2px solid grey;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+button{
+    border: none;
+    background: none;
+    
+}
+
+.item-btn:hover  {
+    background: gold;
+}
+
+/* ORDER SECTION*/
+
+.order-section{
+    
+    margin: 0 auto;
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.hide{
+    display: none;
+}
+
+.order-section  p{
+    
+    font-size: 22px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.order-section > h3{
+    font-size: 28px;
+    margin: auto;
+    padding: 20px 0;
+    
+}
+
+.order-section > div > p > button {
+    font-size: 12px;
+    line-height: 3;
+    padding: 0px;
+    color: grey;
+    
+}
+
+.order-section > div > p > button:hover {
+    
+    color: red;
+    background: none;
+    
+}
+
+
+.shift-right {
+    
+    margin-left: auto;
+}
+
+.grey-line{
+    border-top: 2px solid gray ;
+}
+
+.order-section>button , .checkout-form > button{
+    margin-top: 20px;
+    font-size: 25px;
+    background: #16DB99;
+    color: whitesmoke;
+}
+.order-section>button:hover , .checkout-form > button:hover{ 
+    margin-top: 20px;
+    font-size: 25px;
+    background: green;
+    color: whitesmoke;
+}
+
+.checkout-form{
+    font-family: sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin:  auto;
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    padding: 30px;
+    background: white;
+    border: 1px solid gray;
+    
+    
+}
+
+.checkout-form h3{
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.checkout-form input {
+    display: block;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid gray;
+    font-size: 15px;
+
+}
+
+.checkout-form > button{
+    padding: 10px;
+}
+
+.hide-form{
+    display: none;
+}
+
+.thanks-section{
+    text-decoration: underline;
+    margin: 0 auto;
+    width: 400px;
+    border-radius: 10px;
+    padding: 40px;
+    color: white;
+    background: #16DB99;
+}
+
+.thanks-section  p {
+    text-align: left;
+    font-size: 40px;
 }

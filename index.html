@@ -8,25 +8,54 @@
     </head>
     <body>
         
+        
         <header>
-            <h1>Jimmy's Diner</h1>
-            <h3>The best burgers and pizzas in town</h3>
+           <h1>Jimmy's Diner</h1>
+           <h2>The best burgers and pizzas in town</h2>
         </header>
-        <main>
-            <div class="container">
-                <i class="fa-regular fa-pizza-slice"></i>
-                <div class="item-details">
-                    <h4>Pizza</h4>
-                    <p>pepperoni,mushroom,mozzerella</p>
-                    <p>$14</p>
-                </div>
-                <div class="item-btn"><button>➕</button></div>
-            </div>    
-            <i class="fa-regular fa-pizza-slice"></i>
+        
+        <main id="main">
             
-            <i class="fa-duotone fa-pizza"></i>
-        </main>
-	<script src="index.js"></script>
+        </main>   
+        
+        <div class="order-section hide" id="order-section">
+
+            <h3>Your orders</h3>
+            <div id="order-details">
+             <p><button>remove</button> <span class="shift-right">$</span> </p>
+            </div>
+            <br>
+            <div id="order-total"> 
+                <p class="grey-line">Total price: <span class="shift-right">$</span></span></p>
+            </div>
+            <button id="complete-btn">Complete order</button>
+           
+        </div>
+
+        <div >
+
+           <form class="checkout-form hide-form" id="checkout-form">
+               <h3>Enter card details</h3>
+
+               
+               <input type="text" placeholder="Enter your name" name="name" required>
+
+               
+               <input type="text" placeholder="Enter card number" required>
+
+               <input type="text" placeholder="Enter CVV" required>
+
+               <button type="submit" id="pay-btn">Pay</button>
+               <button type="button" id="close-form-btn">Back to Menu</button>
+
+
+           </form>
+
+
+        </div>
+        
+        
+	<script src="index.js" type="module"></script>
     </body>
 </html>
 
